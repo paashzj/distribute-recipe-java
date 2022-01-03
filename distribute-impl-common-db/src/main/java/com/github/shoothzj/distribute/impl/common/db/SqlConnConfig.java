@@ -17,6 +17,7 @@ public class SqlConnConfig {
 
     public static final String HOST = EnvUtil.getStringVar("host", "HOST", "localhost");
 
-    public static final String JDBC_URL = String.format("jdbc:%s://%s/%s?user=%s&password=%s", DB, HOST, DATABASE, USER, PASSWORD);
+    public static final String JDBC_URL = String.format("jdbc:%s://%s/%s?user=%s&password=%s",
+            DB, HOST, DATABASE, USER, PASSWORD);
 
 }
